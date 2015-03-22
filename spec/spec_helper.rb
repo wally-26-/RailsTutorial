@@ -43,6 +43,9 @@ RSpec.configure do |config|
    config.order = "random"
    ##########
    
+   # add the path for the pages and use variables instead of real path
+   config.include Rails.application.routes.url_helpers
+   
    
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
